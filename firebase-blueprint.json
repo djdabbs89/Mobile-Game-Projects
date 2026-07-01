@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "LeaderboardEntry": {
+      "title": "Leaderboard Entry",
+      "description": "An entry in the global leaderboard for Picky Pocket, recording a run's score and survival time.",
+      "type": "object",
+      "properties": {
+        "playerName": {
+          "type": "string",
+          "description": "Name of the player"
+        },
+        "score": {
+          "type": "number",
+          "description": "Total cash looted during the run"
+        },
+        "survivedTime": {
+          "type": "number",
+          "description": "Seconds survived during the run"
+        },
+        "timestamp": {
+          "type": "number",
+          "description": "Time the score was submitted"
+        }
+      },
+      "required": ["playerName", "score", "survivedTime", "timestamp"]
+    }
+  },
+  "firestore": {
+    "leaderboard": {
+      "schema": { "$ref": "#/entities/LeaderboardEntry" },
+      "description": "Global leaderboard for Picky Pocket runs"
+    }
+  }
+}

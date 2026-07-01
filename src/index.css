@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .scrollbar-amber::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-amber::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .scrollbar-amber::-webkit-scrollbar-thumb {
+    background: #fbbf24;
+    border-radius: 4px;
+  }
+
+  .scrollbar-emerald::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-emerald::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .scrollbar-emerald::-webkit-scrollbar-thumb {
+    background: #34d399;
+    border-radius: 4px;
+  }
+}
